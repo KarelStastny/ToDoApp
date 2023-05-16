@@ -20,11 +20,17 @@ let taskList = document.querySelector(".task-list")
 myForm.addEventListener("submit", (e) =>{
     e.preventDefault()
 
+    if(e.target.elements.newTask.value == ""){
+        alert("Write something")
+    }
+
     //přidání id a názvu úkolu
     task.push({
         id: uuidv4(),
         task: e.target.elements.newTask.value
     })
+
+    e.target.elements.newTask.value = ""
 
     //poslání dat do funkce která převede do Local storage
     saveTask(task)

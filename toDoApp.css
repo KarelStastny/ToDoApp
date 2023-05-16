@@ -6,143 +6,98 @@
     user-select: none;
 }
 
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(90deg, rgb(206, 140, 65), rgb(90, 178, 230));
-    padding: 10px;
-
-}
-
-.update.controller{
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    user-select: none;
-}
-
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(90deg, rgb(206, 140, 65), rgb(90, 178, 230));
-    padding: 10px;
-
-}
-
-.toDoApp{
-    width: 100%;
-    max-width: 540px;
-    background: white;
-    margin: 90px auto 0;
-    padding: 40px 30px 70px;
-    border-radius: 30px;
-}
-
-.toDoApp h2{
-    color: rgb(13, 29, 122);
+body{
+    background-color: #000000da ;
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    font-weight: 900;
-
 }
 
-.toDoApp h2 img{
-    width: 30px;
-    margin-left: 10px;
+
+.container{
+    background-color: #fafafa ;
+    min-height: 25rem;
+    max-height: 40rem;
+    min-width: 25rem;
+    border-radius: 3rem;
+    padding: 1rem;
+    outline: none;
     
 }
 
-.container-input{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.container-input input{
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-
-}
-
-.container-input button{
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background:#ff5945;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 43px;
-}
-
-.container-list li{
-    list-style: none;
-    font-size: 17px;
-    padding: 10px 10px 10px 50px ;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
-}
-
-ul li::before{
-    content: "";
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(image/unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 8px;
-    left: 8px;
-}
-
-.container-list li.checked{
-    color: red;
-    text-decoration: line-through;
-}
-
-.container-list li.checked::before{
-    background-image: url(image/checked.png);
-}
-
-.container-list li span{
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: #555;
-    line-height: 40px;
+.container h1{
+    color: #000000;
+    border-bottom: 1px solid black;
     text-align: center;
-    border-radius: 30px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    border-radius: 3rem;
 }
 
-.container-list li span:hover{
-    background: #555;
-    color: white;
-} */
+.container form{
+    background-color: #0505050c;
+    border-radius: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    
+
+}
+
+.container form input[type="text"]{
+    background-color: transparent;
+    line-height: 3rem;
+    padding-left: 1rem;
+    font-size: 18px;
+    border: 0;
+
+}
+
+.container form input[type="submit"]{
+    text-align: center;
+    border-radius: 3rem;
+    width: 4rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 0;
+    background-color: #ec9d09;
+
+
+
+}
+input, button{
+    outline: none;
+    cursor: pointer;
+
+}
+
+.task-list{
+    max-height: 20rem;
+    overflow-y: auto;
+    
+}
+
+.result-div{
+    background-color: #0505050c;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0.5rem auto;
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: 1rem;
+    border-radius: 0.7rem;
+
+    
+}
+
+.result-div button{
+    border-radius: 0.7rem;
+    border: 0;
+    width: 3rem;
+    background-color: rgb(92, 207, 63);
+    font-size: 16px;
+}
